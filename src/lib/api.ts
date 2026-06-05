@@ -33,7 +33,7 @@ export interface MetricsResponse {
   };
 }
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3000';
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'https://ai-code-compiler-backend-95va.onrender.com';
 
 export const api = {
   async generate(prompt: string): Promise<PipelineResponse> {
